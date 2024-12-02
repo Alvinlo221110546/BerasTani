@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Beras Tani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="BerasTani.html">
+                <img src="logo.png" alt="BerasTani Logo" class="h-6">
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-green-600">Tentang Kami</a>
+                <a href="Product.html" class="text-gray-600 hover:text-green-600">Produk</a>
+                <a href="FarmerProfile.html" class="text-gray-600 hover:text-green-600">Profil Petani</a>
+                <a href="GradingSystem.html" class="text-gray-600 hover:text-green-600">Sistem Grading</a>
+                <a href="TransparancyPrice.html" class="text-gray-600 hover:text-green-600">Transparansi Harga</a>
+                <a href="#blog" class="text-gray-600 hover:text-green-600">Blog & Edukasi</a>
+                <a href="#kontak-kami" class="text-gray-600 hover:text-green-600">Kontak Kami</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="login.html" class="text-green-600 hover:text-green-700">Masuk</a>
+                <a href="register.html" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Daftar</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Spacer for fixed navbar -->
+    <div class="pt-20"></div>
+
+    <!-- Header Section -->
+    <header class="bg-green-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Produk Beras Berkualitas</h1>
+            <p class="text-lg">Temukan berbagai jenis beras berkualitas tinggi di Beras Tani.</p>
+        </div>
+    </header>
+
+    <!-- Ecommerce Products List Section -->
+    <section id="products" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Daftar Produk Beras</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2023/10/10/ilustrasi-beras-1_169.jpeg?w=600&q=90" alt="Beras Premium" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Beras Premium</h3>
+                    <p class="text-gray-600 mb-2">Kualitas: <span class="font-bold">Grade A</span></p>
+                    <p class="text-gray-600 mb-2">Harga: <span class="font-bold">Rp 12.000/kg</span></p>
+                    <p class="text-gray-600 mb-4">Ketersediaan: <span class="font-bold">Tersedia</span></p>
+                    <p class="text-gray-600 mb-4">Deskripsi: Beras premium dengan proses produksi yang higienis dan terjamin kualitasnya.</p>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Tambah ke Keranjang</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="https://cdn.kitakini.news/uploads/images/202404/_4122_Relaksasi-Harga--Beras-Medium-Dipastikan-Makin-Mahal.png" alt="Beras Organik" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Beras Organik</h3>
+                    <p class="text-gray-600 mb-2">Kualitas: <span class="font-bold">Grade A</span></p>
+                    <p class="text-gray-600 mb-2">Harga: <span class="font-bold">Rp 15.000/kg</span></p>
+                    <p class="text-gray-600 mb-4">Ketersediaan: <span class="font-bold">Tersedia</span></p>
+                    <p class="text-gray-600 mb-4">Deskripsi: Beras organik yang ditanam tanpa pestisida, aman untuk kesehatan.</p>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Tambah ke Keranjang</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="https://beritacianjur.com/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-05-at-21.05.46.jpeg" alt="Beras Lokal" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Beras Lokal</h3>
+                    <p class="text-gray-600 mb-2">Kualitas: <span class="font-bold">Grade B</span></p>
+                    <p class="text-gray-600 mb-2">Harga: <span class="font-bold">Rp 8.000/kg</span></p>
+                    <p class="text-gray-600 mb-4">Ketersediaan: <span class="font-bold">Tersedia</span></p>
+                    <p class="text-gray-600 mb-4">Deskripsi: Beras lokal yang terjamin kesegarannya dan cita rasa khas daerah.</p>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grading System Section -->
+    <section id="sistem-grading" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Sistem Grading Beras</h2>
+            <p class="text-center text-gray-600 mb-6">Sistem grading beras digunakan untuk menilai kualitas produk berdasarkan beberapa kriteria, termasuk ukuran butir, kadar air, dan kebersihan.</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong>Grade A:</strong> Beras terbaik dengan ukuran butir yang seragam dan kadar air yang rendah.</li>
+                <li><strong>Grade B:</strong> Beras dengan ukuran butir yang bervariasi dan sedikit lebih tinggi kadar airnya.</li>
+                <li><strong>Grade C:</strong> Beras dengan kualitas standar yang mungkin memiliki cacat minor.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-12">FAQ - Pertanyaan yang Sering Diajukan</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-semibold">1. Bagaimana cara membeli produk?</h3>
+                    <p class="text-gray-600">Anda bisa memilih produk yang ingin dibeli dan klik tombol "Tambah ke Keranjang". Ikuti langkah-langkah untuk menyelesaikan pembelian.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-semibold">2. Apakah ada jaminan kualitas?</h3>
+                    <p class="text-gray-600">Ya, semua produk yang dijual di Beras Tani telah melalui proses seleksi dan memenuhi standar kualitas tinggi.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-semibold">3. Bagaimana cara mengecek ketersediaan produk?</h3>
+                    <p class="text-gray-600">Setiap produk akan mencantumkan informasi ketersediaan stok pada halaman produk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Product Details Section -->
+    <section id="product-details" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Detail Produk</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://awsimages.detik.net.id/community/media/visual/2023/10/10/ilustrasi-beras-1_169.jpeg?w=600&q=90" alt="Detail Produk" class="w-full h-100 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Beras Premium</h3>
+                <p class="text-gray-600 mb-2">Kualitas: <span class="font-bold">Grade A</span></p>
+                <p class="text-gray-600 mb-2">Harga: <span class="font-bold">Rp 12.000/kg</span></p>
+                <p class="text-gray-600 mb-4">Ketersediaan: <span class="font-bold">Tersedia</span></p>
+                <p class="text-gray-600 mb-4">Deskripsi: Beras premium dengan proses produksi yang higienis dan terjamin kualitasnya. Cocok untuk berbagai hidangan.</p>
+                <h4 class="text-lg font-semibold mb-2">Profil Petani</h4>
+                <p class="text-gray-600 mb-2">Nama: John Doe</p>
+                <p class="text-gray-600 mb-4">Lokasi: Tanjung Balai</p>
+                <h4 class="text-lg font-semibold mb-2">Ulasan Pembeli</h4>
+                <p class="text-gray-600">"Kualitas berasnya sangat baik, rasanya enak dan pulen!"</p>
+                <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 mt-4">Ajukan untuk Membeli</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- Footer -->
+<footer class="bg-green-800 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-xl font-semibold mb-4">BerasTani</h4>
+                <p>Platform agrikultur yang menghubungkan petani beras langsung dengan pembeli.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Tautan Cepat</h4>
+                <ul>
+                    <li><a href="#beranda" class="hover:text-green-300">Beranda</a></li>
+                    <li><a href="#tentang-kami" class="hover:text-green-300">Tentang Kami</a></li>
+                    <li><a href="#produk" class="hover:text-green-300">Produk</a></li>
+                    <li><a href="#blog" class="hover:text-green-300">Blog & Edukasi</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Kontak Kami</h4>
+                <p>Email: info@berastani.com</p>
+                <p>Telepon: (021) 1234-5678</p>
+                <p>Alamat: Jl. Padi No. 123, Jakarta</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Ikuti Kami</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/fk.shoot_projects/?hl=id" class="text-2xl hover:text-green-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-green-700 text-center">
+            <p>&copy; 2024 BerasTani. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+</footer>
+</html>

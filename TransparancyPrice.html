@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparansi Harga - BerasTani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="BerasTani.html">
+                <img src="logo.png" alt="BerasTani Logo" class="h-6">
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-green-600">Tentang Kami</a>
+                <a href="Product.html" class="text-gray-600 hover:text-green-600">Produk</a>
+                <a href="FarmerProfile.html" class="text-gray-600 hover:text-green-600">Profil Petani</a>
+                <a href="GradingSystem.html" class="text-gray-600 hover:text-green-600">Sistem Grading</a>
+                <a href="TransparancyPrice.html" class="text-gray-600 hover:text-green-600">Transparansi Harga</a>
+                <a href="#blog" class="text-gray-600 hover:text-green-600">Blog & Edukasi</a>
+                <a href="#kontak-kami" class="text-gray-600 hover:text-green-600">Kontak Kami</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="login.html" class="text-green-600 hover:text-green-700">Masuk</a>
+                <a href="register.html" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Daftar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer for fixed navbar -->
+    <div class="pt-20"></div>
+
+    <!-- Header Section -->
+    <header class="bg-green-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Transparansi Harga Beras</h1>
+            <p class="text-lg">Kami memastikan harga yang adil dan transparan untuk petani dan pembeli.</p>
+        </div>
+    </header>
+
+    <!-- Feature Section 1: Peta Interaktif -->
+<section class="py-16 bg-gradient-to-b from-gray-100 to-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-extrabold text-green-600 mb-8">Rata-rata Harga Pasar Beras</h2>
+        <p class="text-gray-600 text-lg mb-8 max-w-xl mx-auto">
+            Gunakan peta interaktif ini untuk melihat rata-rata harga pasar beras di berbagai pulau di Indonesia. Kami memastikan harga yang akurat dan transparan.
+        </p>
+        
+        <!-- Leaflet Map -->
+        <div id="map" class="w-full h-96 mb-12 shadow-lg rounded-lg overflow-hidden"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Sumatera -->
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600">Sumatera</h3>
+                <p class="text-gray-600">Harga Rata-rata: <span class="font-bold text-green-600">Rp 11.000/kg</span></p>
+            </div>
+
+            <!-- Jawa -->
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600">Jawa</h3>
+                <p class="text-gray-600">Harga Rata-rata: <span class="font-bold text-green-600">Rp 10.500/kg</span></p>
+            </div>
+
+            <!-- Kalimantan -->
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600">Kalimantan</h3>
+                <p class="text-gray-600">Harga Rata-rata: <span class="font-bold text-green-600">Rp 12.000/kg</span></p>
+            </div>
+
+            <!-- Sulawesi -->
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600">Sulawesi</h3>
+                <p class="text-gray-600">Harga Rata-rata: <span class="font-bold text-green-600">Rp 11.500/kg</span></p>
+            </div>
+
+            <!-- Papua -->
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600">Papua</h3>
+                <p class="text-gray-600">Harga Rata-rata: <span class="font-bold text-green-600">Rp 13.000/kg</span></p>
+            </div>
+
+            <!-- Bali & Nusa Tenggara -->
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600">Bali & Nusa Tenggara</h3>
+                <p class="text-gray-600">Harga Rata-rata: <span class="font-bold text-green-600">Rp 11.800/kg</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Feature Section 2 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-green-600 mb-8">Harga yang Adil untuk Semua</h2>
+            <p class="text-gray-600 mb-8">Beras Tani menjamin harga yang adil untuk petani dan pembeli dengan meminimalkan peran tengkulak. Sistem transparansi harga kami memberikan keuntungan bagi semua pihak di ekosistem agrikultur kami.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-12 bg-green-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Bergabunglah dengan BerasTani!</h2>
+            <p class="mb-8">Daftar sekarang dan nikmati manfaat dari sistem harga yang transparan dan adil.</p>
+            <a href="register.html" class="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-gray-200">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">BerasTani</h4>
+                    <p>Platform agrikultur yang menghubungkan petani beras langsung dengan pembeli.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#beranda" class="hover:text-green-300">Beranda</a></li>
+                        <li><a href="#tentang-kami" class="hover:text-green-300">Tentang Kami</a></li>
+                        <li><a href="#produk" class="hover:text-green-300">Produk</a></li>
+                        <li><a href="#blog" class="hover:text-green-300">Blog & Edukasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Kontak Kami</h4>
+                    <p>Email: info@berastani.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                    <p>Alamat: Jl. Padi No. 123, Jakarta</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+        // Create the map and set the initial view to Indonesia
+        var map = L.map('map').setView([-1.5, 117], 5); // Latitude and Longitude of Indonesia
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add markers with information about rice prices in different islands
+        var ricePrices = [
+            { "location": "Sumatera", "price": "Rp 11.000/kg", "lat": 0.7893, "lon": 100.6753 },
+            { "location": "Jawa", "price": "Rp 10.500/kg", "lat": -7.6145, "lon": 110.7123 },
+            { "location": "Kalimantan", "price": "Rp 12.000/kg", "lat": -0.2041, "lon": 114.5074 },
+            { "location": "Sulawesi", "price": "Rp 11.500/kg", "lat": -1.4304, "lon": 121.4456 },
+            { "location": "Papua", "price": "Rp 13.000/kg", "lat": -4.2699, "lon": 138.0804 }
+        ];
+
+        ricePrices.forEach(function (price) {
+            L.marker([price.lat, price.lon]).addTo(map)
+                .bindPopup(`<strong>${price.location}</strong><br>Harga: ${price.price}`)
+                .openPopup();
+        });
+    </script>
+</body>
+
+</html>

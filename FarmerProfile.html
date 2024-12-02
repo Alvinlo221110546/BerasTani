@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Profiles - Beras Tani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="BerasTani.html">
+                <img src="logo.png" alt="BerasTani Logo" class="h-6">
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-green-600">Tentang Kami</a>
+                <a href="Product.html" class="text-gray-600 hover:text-green-600">Produk</a>
+                <a href="FarmerProfile.html" class="text-gray-600 hover:text-green-600">Profil Petani</a>
+                <a href="GradingSystem.html" class="text-gray-600 hover:text-green-600">Sistem Grading</a>
+                <a href="TransparancyPrice.html" class="text-gray-600 hover:text-green-600">Transparansi Harga</a>
+                <a href="#blog" class="text-gray-600 hover:text-green-600">Blog & Edukasi</a>
+                <a href="#kontak-kami" class="text-gray-600 hover:text-green-600">Kontak Kami</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="login.html" class="text-green-600 hover:text-green-700">Masuk</a>
+                <a href="register.html" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Daftar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer for fixed navbar -->
+    <div class="pt-20"></div>
+
+    <!-- Header Section -->
+    <header class="bg-green-600 shadow-md">
+        <div class="container mx-auto px-4 py-12 text-center">
+            <h1 class="text-4xl font-bold text-white mb-4">Profil Petani Terverifikasi</h1>
+            <p class="text-lg text-white">Petani yang telah diverifikasi dan terdaftar di BerasTani.</p>
+        </div>
+    </header>
+
+    <!-- Team Section (Farmer Profiles) -->
+    <section id="team" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Petani Terverifikasi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Profil Petani 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHGUFZlkAb12QF1jMmrLhnqijAm48dLmCzBP4nF8wGbAyrV4iXyuPqrKa0-ID6YgXDw&usqp=CAU" alt="Foto Petani Budi" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Budi</h3>
+                    <p class="text-gray-600 text-center mb-2">Lokasi: Jawa Barat</p>
+                    <p class="text-gray-600 text-center mb-2">Pengalaman: 10 tahun bertani</p>
+                    <p class="text-gray-600 text-center mb-4">Riwayat Transaksi: 50</p>
+                    <p class="text-gray-600 text-center mb-4">Rating: 4.8/5</p>
+                    <p class="text-gray-600 text-center mb-4">Sertifikasi: Organik Nasional</p>
+                    <div class="text-center">
+                        <a href="#profil-budi" class="bg-green-600 text-white px-4 py-2 rounded-full inline-block hover:bg-green-700 transition duration-300">Lihat Profil</a>
+                    </div>
+                </div>
+                <!-- Profil Petani 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://cdn3.iconfinder.com/data/icons/avatars-business-human1/180/woman1-512.png" alt="Foto Petani Siti" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Siti</h3>
+                    <p class="text-gray-600 text-center mb-2">Lokasi: Jawa Timur</p>
+                    <p class="text-gray-600 text-center mb-2">Pengalaman: 8 tahun bertani</p>
+                    <p class="text-gray-600 text-center mb-4">Riwayat Transaksi: 75</p>
+                    <p class="text-gray-600 text-center mb-4">Rating: 4.9/5</p>
+                    <p class="text-gray-600 text-center mb-4">Sertifikasi: ISO 9001</p>
+                    <div class="text-center">
+                        <a href="#profil-siti" class="bg-green-600 text-white px-4 py-2 rounded-full inline-block hover:bg-green-700 transition duration-300">Lihat Profil</a>
+                    </div>
+                </div>
+                <!-- Profil Petani 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHGUFZlkAb12QF1jMmrLhnqijAm48dLmCzBP4nF8wGbAyrV4iXyuPqrKa0-ID6YgXDw&usqp=CAU" alt="Foto Petani Agus" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-center mb-2">Agus</h3>
+                    <p class="text-gray-600 text-center mb-2">Lokasi: Sumatera Utara</p>
+                    <p class="text-gray-600 text-center mb-2">Pengalaman: 12 tahun bertani</p>
+                    <p class="text-gray-600 text-center mb-4">Riwayat Transaksi: 120</p>
+                    <p class="text-gray-600 text-center mb-4">Rating: 4.7/5</p>
+                    <p class="text-gray-600 text-center mb-4">Sertifikasi: Penghargaan Petani Berprestasi 2021</p>
+                    <div class="text-center">
+                        <a href="#profil-agus" class="bg-green-600 text-white px-4 py-2 rounded-full inline-block hover:bg-green-700 transition duration-300">Lihat Profil</a>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak profil petani sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features List Section (Products, Sales Stats, Reviews) -->
+<section id="features" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Produk dan Statistik</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Produk Beras -->
+            <div class="bg-green-50 p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600 flex items-center">
+                    <i class="fas fa-seedling mr-2 text-green-500"></i> Produk Beras yang Dijual
+                </h3>
+                <img src="https://asset.kompas.com/crops/DyKeOYffIJ_5yMrf7ZrcFe6vyr0=/0x0:1000x667/1200x800/data/photo/2024/02/23/65d89598cff5b.jpg" alt="Produk Beras Organik" class="w-full h-48 object-cover rounded-lg mb-4">
+                <ul class="list-disc list-inside text-gray-600">
+                    <li>Beras Organik - Grade A</li>
+                    <li>Beras Medium - Grade B</li>
+                    <li>Beras Standar - Grade C</li>
+                </ul>
+            </div>
+
+            <!-- Statistik Penjualan -->
+            <div class="bg-green-50 p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600 flex items-center">
+                    <i class="fas fa-chart-line mr-2 text-green-500"></i> Statistik Penjualan
+                </h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHA5vIJaH1Rg9xSoHuQGlvfLEu2Vmx3O0wZw&s" alt="Grafik Penjualan" class="w-full h-30 object-cover rounded-lg">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-green-600">200+</p>
+                        <p class="text-gray-600">Total Transaksi</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-green-600">4.8/5</p>
+                        <p class="text-gray-600">Rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sertifikasi atau Penghargaan -->
+            <div class="bg-green-50 p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600 flex items-center">
+                    <i class="fas fa-award mr-2 text-green-500"></i> Sertifikasi atau Penghargaan
+                </h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgjnf7cOrcIQDxO6IwacKiTrnldUccDIxOVA&s" alt="Sertifikasi" class="w-full h-48 object-cover rounded-lg mb-4">
+                <ul class="list-disc list-inside text-gray-600">
+                    <li>Penghargaan Petani Berprestasi 2021</li>
+                    <li>Sertifikat Organik Nasional</li>
+                    <li>Sertifikasi ISO 9001</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Pertanyaan yang Sering Diajukan</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Bagaimana proses verifikasi petani?</h3>
+                    <p class="text-gray-600">Petani harus melalui serangkaian proses evaluasi dan audit untuk memastikan kualitas produk mereka.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Bagaimana cara membeli langsung dari petani?</h3>
+                    <p class="text-gray-600">Anda dapat menghubungi petani secara langsung melalui informasi kontak yang tersedia di profil mereka.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Apakah ada jaminan kualitas produk?</h3>
+                    <p class="text-gray-600">Ya, semua produk telah melalui sistem grading dan verifikasi untuk menjamin kualitas terbaik.</p>
+                </div>
+                <!-- Tambahkan FAQ lainnya sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-16 bg-green-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Tertarik Membeli Langsung dari Petani?</h2>
+            <p class="text-lg mb-6">Hubungi kami atau petani langsung untuk mendapatkan informasi lebih lanjut dan melakukan pemesanan.</p>
+            <a href="/contact" class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Tentang BerasTani -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">BerasTani</h4>
+                    <p>Platform agrikultur yang menghubungkan petani beras langsung dengan pembeli.</p>
+                </div>
+                <!-- Tautan Cepat -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#beranda" class="hover:text-green-300">Beranda</a></li>
+                        <li><a href="#tentang-kami" class="hover:text-green-300">Tentang Kami</a></li>
+                        <li><a href="#produk" class="hover:text-green-300">Produk</a></li>
+                        <li><a href="#blog" class="hover:text-green-300">Blog & Edukasi</a></li>
+                    </ul>
+                </div>
+                <!-- Kontak Kami -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Kontak Kami</h4>
+                    <p>Email: info@berastani.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                    <p>Alamat: Jl. Padi No. 123, Jakarta</p>
+                </div>
+                <!-- Ikuti Kami -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/fk.shoot_projects/?hl=id" class="text-2xl hover:text-green-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-green-700 text-center">
+                <p>&copy; 2024 BerasTani. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

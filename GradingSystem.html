@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Grading Beras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="BerasTani.html">
+                <img src="logo.png" alt="BerasTani Logo" class="h-6">
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-green-600">Tentang Kami</a>
+                <a href="Product.html" class="text-gray-600 hover:text-green-600">Produk</a>
+                <a href="FarmerProfile.html" class="text-gray-600 hover:text-green-600">Profil Petani</a>
+                <a href="GradingSystem.html" class="text-gray-600 hover:text-green-600">Sistem Grading</a>
+                <a href="TransparancyPrice.html" class="text-gray-600 hover:text-green-600">Transparansi Harga</a>
+                <a href="#blog" class="text-gray-600 hover:text-green-600">Blog & Edukasi</a>
+                <a href="#kontak-kami" class="text-gray-600 hover:text-green-600">Kontak Kami</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="login.html" class="text-green-600 hover:text-green-700">Masuk</a>
+                <a href="register.html" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Daftar</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Spacer for fixed navbar -->
+    <div class="pt-20"></div>
+
+    <!-- Header Section -->
+    <header class="bg-green-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Sistem Grading Beras</h1>
+            <p class="text-lg">Pelajari bagaimana kami menilai kualitas beras berdasarkan beberapa kriteria.</p>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section id="search-filter" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-8">Cari dan Filter Beras</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-6">
+                <!-- Search Bar -->
+                <input type="text" placeholder="Cari jenis beras, daerah, atau harga..." class="w-full md:w-2/3 p-4 border border-gray-300 rounded-lg">
+                <!-- Filter Dropdowns -->
+                <div class="flex space-x-4">
+                    <div class="relative">
+                        <select class="appearance-none p-4 pr-10 border border-gray-300 rounded-lg">
+                            <option value="">Filter Berdasarkan Grade</option>
+                            <option value="A">Grade A</option>
+                            <option value="B">Grade B</option>
+                            <option value="C">Grade C</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                            <i class="fas fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </div>
+                
+                    <div class="relative">
+                        <select class="appearance-none p-4 pr-10 border border-gray-300 rounded-lg">
+                            <option value="">Filter Berdasarkan Lokasi</option>
+                            <option value="Sumatera">Sumatera</option>
+                            <option value="Jawa">Jawa</option>
+                            <option value="Kalimantan">Kalimantan</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                            <i class="fas fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </div>
+                
+                    <div class="relative">
+                        <select class="appearance-none p-4 pr-10 border border-gray-300 rounded-lg">
+                            <option value="">Filter Berdasarkan Harga</option>
+                            <option value="10000">Di bawah Rp 10.000</option>
+                            <option value="10000-15000">Rp 10.000 - Rp 15.000</option>
+                            <option value="15000">Di atas Rp 15.000</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                            <i class="fas fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Grading System Features -->
+    <section id="grading-features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Kriteria Grading Beras</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Grading Feature 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+                    <h3 class="text-xl font-semibold mb-4">Ukuran Butir</h3>
+                    <p class="text-gray-600">Beras dinilai berdasarkan ukuran butirnya, dengan ukuran yang seragam dianggap sebagai kualitas terbaik.</p>
+                </div>
+                <!-- Grading Feature 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+                    <h3 class="text-xl font-semibold mb-4">Warna</h3>
+                    <p class="text-gray-600">Warna beras juga menjadi faktor penilaian, dengan warna putih bersih sebagai standar kualitas tertinggi.</p>
+                </div>
+                <!-- Grading Feature 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+                    <h3 class="text-xl font-semibold mb-4">Kadar Air</h3>
+                    <p class="text-gray-600">Kadar air yang rendah dianggap lebih baik karena membuat beras lebih tahan lama dan pulen saat dimasak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grading Card Section -->
+    <section id="grading-products" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Produk dengan Sistem Grading</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Grading Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2023/10/10/ilustrasi-beras-1_169.jpeg?w=600&q=90" alt="Beras Premium" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Beras Premium</h3>
+                    <p class="text-gray-600 mb-2">Kualitas: <span class="font-bold">Grade A</span></p>
+                    <p class="text-gray-600 mb-2">Harga: <span class="font-bold">Rp 12.000/kg</span></p>
+                    <p class="text-gray-600 mb-4">Lokasi: Jawa</p>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Beli Sekarang</button>
+                </div>
+                <!-- Grading Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="https://cdn.kitakini.news/uploads/images/202404/_4122_Relaksasi-Harga--Beras-Medium-Dipastikan-Makin-Mahal.png" alt="Beras Organik" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Beras Organik</h3>
+                    <p class="text-gray-600 mb-2">Kualitas: <span class="font-bold">Grade A</span></p>
+                    <p class="text-gray-600 mb-2">Harga: <span class="font-bold">Rp 15.000/kg</span></p>
+                    <p class="text-gray-600 mb-4">Lokasi: Sumatera</p>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Beli Sekarang</button>
+                </div>
+                <!-- Grading Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="https://beritacianjur.com/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-05-at-21.05.46.jpeg" alt="Beras Lokal" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Beras Lokal</h3>
+                    <p class="text-gray-600 mb-2">Kualitas: <span class="font-bold">Grade B</span></p>
+                    <p class="text-gray-600 mb-2">Harga: <span class="font-bold">Rp 10.000/kg</span></p>
+                    <p class="text-gray-600 mb-4">Lokasi: Kalimantan</p>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-12 bg-green-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Ingin Tahu Lebih Lanjut Tentang Sistem Grading Kami?</h2>
+            <p class="mb-8">Hubungi kami untuk informasi lebih lanjut mengenai produk dan kualitas beras yang kami tawarkan.</p>
+            <a href="#kontak-kami" class="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-gray-200">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">BerasTani</h4>
+                    <p>Platform agrikultur yang menghubungkan petani beras langsung dengan pembeli.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#beranda" class="hover:text-green-300">Beranda</a></li>
+                        <li><a href="#tentang-kami" class="hover:text-green-300">Tentang Kami</a></li>
+                        <li><a href="#produk" class="hover:text-green-300">Produk</a></li>
+                        <li><a href="#blog" class="hover:text-green-300">Blog & Edukasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Kontak Kami</h4>
+                    <p>Email: info@berastani.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                    <p>Alamat: Jl. Padi No. 123, Jakarta</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/fk.shoot_projects/?hl=id" class="text-2xl hover:text-green-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-green-700 text-center">
+                <p>&copy; 2024 BerasTani. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

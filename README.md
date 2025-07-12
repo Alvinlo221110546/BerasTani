@@ -20,6 +20,7 @@
 - `logo.png` — Logo utama aplikasi
 - `ya.png` — Gambar tambahan untuk tampilan visual
 
+## 📁 Struktur Proyek
 ```bash
 📦 BerasTani/
 ├── 📄 BerasTani.html           # Halaman utama aplikasi

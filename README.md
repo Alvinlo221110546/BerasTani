@@ -20,17 +20,19 @@
 - `logo.png` — Logo utama aplikasi
 - `ya.png` — Gambar tambahan untuk tampilan visual
 
+```bash
 📦 BerasTani/
-├── 📄 BerasTani.html            # Halaman utama aplikasi
-├── 📄 FarmerProfile.html        # Profil petani
-├── 📄 GradingSystem.html        # Sistem klasifikasi beras
-├── 📄 Product.html              # Katalog produk pertanian
-├── 📄 TransparancyPrice.html    # Transparansi harga beras
-├── 📄 login.html                # Halaman login
-├── 📄 register.html             # Halaman registrasi pengguna
-├── 🖼️ logo.png                  # Logo aplikasi
-├── 🖼️ ya.png                    # Gambar tambahan
-└── 📄 README.md                 # Dokumentasi proyek
+├── 📄 BerasTani.html           # Halaman utama aplikasi
+├── 📄 FarmerProfile.html       # Profil petani
+├── 📄 GradingSystem.html       # Sistem klasifikasi beras
+├── 📄 Product.html             # Katalog produk pertanian
+├── 📄 TransparancyPrice.html   # Transparansi harga beras
+├── 📄 login.html               # Halaman login
+├── 📄 register.html            # Halaman registrasi pengguna
+├── 🖼️ logo.png                 # Logo utama aplikasi
+├── 🖼️ ya.png                   # Gambar tambahan untuk visual
+└── 📄 README.md                # Dokumentasi proyek
+```
 
 
 ## 🚀 Cara Menjalankan
